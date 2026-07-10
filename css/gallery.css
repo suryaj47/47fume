@@ -161,9 +161,13 @@ GALLERY
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .gallery {
     padding: 6rem 0;
+  }
+
+  .gallery-grid {
+    gap: 1rem;
   }
 
   .gallery-card {
@@ -171,11 +175,39 @@ GALLERY
   }
 
   .gallery-overlay {
-    left: 25px;
-    bottom: 25px;
+    left: 22px;
+    bottom: 22px;
   }
 
   .gallery-overlay h3 {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
+  }
+
+  .gallery-overlay p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .gallery {
+    padding: 5rem 0;
+  }
+
+  .gallery-card {
+    height: 260px;
+  }
+
+  .gallery-overlay {
+    left: 16px;
+    bottom: 16px;
+  }
+
+  .gallery-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .gallery-overlay p {
+    font-size: 0.85rem;
+    max-width: 240px;
   }
 }

@@ -176,6 +176,7 @@ BUY MODAL
   justify-content: center;
   align-items: center;
   padding: 20px;
+  overflow-y: auto;
   visibility: hidden;
   opacity: 0;
   transition: 0.35s;
@@ -457,6 +458,7 @@ SUCCESS MODAL
   align-items: center;
 
   padding: 20px;
+  overflow-y: auto;
 
   visibility: hidden;
 
@@ -686,6 +688,7 @@ RESPONSIVE
   .modal-content {
     width: 96%;
     border-radius: 20px;
+    max-height: none;
   }
 
   .modal-details {
@@ -703,6 +706,18 @@ RESPONSIVE
   .success-box {
     width: min(92%, 430px);
     padding: 2rem 1.4rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .buy-modal,
+  .success-modal {
+    align-items: flex-start;
+  }
+
+  .modal-content,
+  .success-box {
+    margin: 20px 0;
   }
 }
 
