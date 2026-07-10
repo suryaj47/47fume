@@ -1,0 +1,337 @@
+/*======================================================
+  GOOGLE FONTS
+======================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Adamina&display=swap");
+
+/*======================================================
+  VARIABLES
+======================================================*/
+
+:root {
+  /* Colors */
+
+  --primary: #2c5ead;
+  --secondary: #1591dc;
+  --accent: #4bb8fa;
+  --light: #c4e2f5;
+
+  --dark: #08121f;
+  --dark-2: #102238;
+
+  --white: #ffffff;
+
+  --text: #eaf4ff;
+
+  --text-light: #bfd2e6;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --glass: rgba(255, 255, 255, 0.05);
+
+  --shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+
+  --transition: 0.4s ease;
+
+  --container: 1200px;
+}
+
+/*======================================================
+  RESET
+======================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Adamina", serif;
+
+  background: var(--dark);
+
+  color: var(--white);
+
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 800px;
+  height: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+/*======================================================
+  SELECTION
+======================================================*/
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/*======================================================
+  SCROLLBAR
+======================================================*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08121f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary), var(--accent));
+
+  border-radius: 50px;
+}
+
+/*======================================================
+  CONTAINER
+======================================================*/
+
+.container {
+  width: min(90%, var(--container));
+
+  margin: auto;
+}
+
+/*======================================================
+  BUTTONS
+======================================================*/
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 16px 34px;
+
+  border-radius: 100px;
+
+  transition: 0.35s ease;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.6px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Primary */
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  color: white;
+
+  box-shadow: 0 15px 35px rgba(21, 145, 220, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 25px 60px rgba(21, 145, 220, 0.55);
+}
+
+/* Outline */
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  transform: translateY(-5px);
+}
+
+/*======================================================
+  LOGO
+======================================================*/
+
+.logo {
+  font-family: "Alice", serif;
+
+  font-size: 2rem;
+
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.logo-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: -100px;
+}
+
+/*======================================================
+  HEADER
+======================================================*/
+
+.header {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  z-index: 999;
+
+  transition: 0.4s ease;
+}
+
+/* Scroll Effect */
+
+.header.active {
+  backdrop-filter: blur(20px);
+
+  background: rgba(8, 18, 31, 0.75);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/*======================================================
+  NAVBAR
+======================================================*/
+
+.navbar {
+  height: 90px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+
+  gap: 40px;
+}
+
+.nav-links a {
+  position: relative;
+
+  transition: 0.35s;
+
+  color: var(--text-light);
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--accent);
+
+  transition: 0.4s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/*======================================================
+  SECTION
+======================================================*/
+
+section {
+  position: relative;
+
+  overflow: hidden;
+  scroll-margin-top: 110px;
+}
+
+/*======================================================
+  TYPOGRAPHY
+======================================================*/
+
+h1,
+h2,
+h3 {
+  font-family: "Alice", serif;
+}
+
+p {
+  color: var(--text-light);
+
+  line-height: 1.9;
+}
+
+/*======================================================
+  GLASS CARD
+======================================================*/
+
+.glass {
+  background: var(--glass);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 24px;
+}
+
+/*======================================================
+  GRADIENT TEXT
+======================================================*/
+
+.gradient {
+  background: linear-gradient(90deg, var(--accent), white);
+
+  color: transparent;
+}

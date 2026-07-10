@@ -1,0 +1,148 @@
+/*=========================
+FEATURES
+=========================*/
+
+.features {
+  padding: 8rem 0;
+}
+
+.features .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.feature-banner {
+  min-height: 720px;
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.82) 32%,
+      rgba(0, 0, 0, 0.45) 60%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    url("../assets/images/feature.png");
+  background-size: cover;
+  background-position: center right;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.48);
+}
+
+.feature-content {
+  width: 55%;
+  padding: 4.5rem 5.5rem;
+}
+
+.section-tag {
+  color: var(--gold);
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  font-size: 0.9rem;
+}
+
+.feature-content h2 {
+  margin: 1rem 0;
+
+  font-size: 4rem;
+
+  line-height: 1.1;
+}
+
+.feature-content h2 span {
+  color: var(--gold);
+}
+
+.feature-content p {
+  color: #d2d2d2;
+
+  line-height: 1.9;
+
+  max-width: 520px;
+
+  margin-bottom: 3rem;
+}
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1.2rem;
+
+  margin-bottom: 3rem;
+}
+
+.feature-box {
+  padding: 1.4rem;
+
+  border-radius: 18px;
+
+  backdrop-filter: blur(12px);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.35s;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(212, 175, 55, 0.45);
+
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.feature-box h3 {
+  font-size: 1.4rem;
+
+  color: var(--gold);
+
+  margin-bottom: 0.4rem;
+}
+
+.feature-box span {
+  color: #ddd;
+
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .feature-banner {
+    min-height: 620px;
+    background-position: 70%;
+  }
+
+  .feature-content {
+    width: 100%;
+    padding: 4rem 2.5rem;
+  }
+
+  .feature-content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .feature-banner {
+    min-height: 560px;
+    background-position: 75%;
+  }
+}

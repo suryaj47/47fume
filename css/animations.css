@@ -1,0 +1,167 @@
+/* ===============================
+   Floating Bottle
+================================== */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===============================
+   Glow Pulse
+================================== */
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: scale(1.08);
+
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(1);
+
+    opacity: 0.45;
+  }
+}
+
+/* ===============================
+   Scroll Line
+================================== */
+
+@keyframes scrollLine {
+  0% {
+    transform: translateY(-10px);
+
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+
+    opacity: 0;
+  }
+}
+
+/* ===============================
+   Fade Up
+================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   Fade Left
+================================== */
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   Fade Right
+================================== */
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+
+    transform: translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   Scale In
+================================== */
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+   Button Shine
+================================== */
+
+@keyframes shine {
+  from {
+    left: -120%;
+  }
+
+  to {
+    left: 120%;
+  }
+}
+
+/* ===============================
+   Background Movement
+================================== */
+
+@keyframes backgroundMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-40px, -25px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

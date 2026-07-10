@@ -1,0 +1,272 @@
+/*==========================================
+  NOTES SECTION
+==========================================*/
+
+.notes {
+  position: relative;
+  padding: 140px 0;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(8, 18, 31, 0.9) 0%,
+      rgba(8, 18, 31, 0.72) 45%,
+      rgba(8, 18, 31, 0.9) 100%
+    ),
+    url("../assets/images/notes-bg.png") center/cover no-repeat;
+  isolation: isolate;
+}
+
+/*==========================================
+BACKGROUND GLOW
+==========================================*/
+
+.notes::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  top: -220px;
+  left: -180px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(75, 184, 250, 0.12),
+    transparent 70%
+  );
+
+  filter: blur(100px);
+}
+
+.notes::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  bottom: -150px;
+  right: -120px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(circle, rgba(21, 145, 220, 0.1), transparent 70%);
+
+  filter: blur(90px);
+}
+
+/*==========================================
+SECTION HEADER
+==========================================*/
+
+.section-header {
+  max-width: 700px;
+
+  margin: 0 auto 80px;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.section-header span {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  font-size: 0.8rem;
+
+  color: var(--accent);
+}
+
+.section-header h2 {
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+
+  color: white;
+}
+
+.section-header p {
+  max-width: 550px;
+
+  margin: auto;
+
+  color: var(--text-light);
+
+  line-height: 1.9;
+}
+
+/* ===========================
+   SIGNATURE NOTES
+=========================== */
+
+.notes {
+  padding: 8rem 0;
+}
+
+.notes-grid {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.note-card {
+  position: relative;
+
+  padding: 2.5rem;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.35s ease;
+
+  overflow: hidden;
+}
+
+.note-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(212, 175, 55, 0.45);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.note-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(212, 175, 55, 0.08),
+    transparent 45%
+  );
+
+  pointer-events: none;
+}
+
+.note-number {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+
+  border-radius: 50%;
+
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+
+  color: var(--gold);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.note-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.note-subtitle {
+  color: var(--gold);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.note-card ul {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+
+  margin-bottom: 2rem;
+}
+
+.note-card ul li {
+  padding: 0.55rem 1rem;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #ececec;
+  font-size: 0.9rem;
+}
+
+.note-card p:last-child {
+  color: rgba(255, 255, 255, 0.75);
+
+  line-height: 1.8;
+}
+
+/* Accent Borders */
+
+.note-card.top {
+  border-top: 4px solid #ffd166;
+}
+
+.note-card.heart {
+  border-top: 4px solid #ff7aa2;
+}
+
+.note-card.base {
+  border-top: 4px solid #c89b6d;
+}
+/*==========================================
+RESPONSIVE
+==========================================*/
+
+@media (max-width: 992px) {
+  .notes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .notes {
+    padding: 100px 0;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .note-card {
+    padding: 35px 28px;
+  }
+
+  .section-header {
+    margin-bottom: 60px;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+}
