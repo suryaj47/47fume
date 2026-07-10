@@ -7,7 +7,7 @@
 An immersive luxury perfume landing page crafted with modern web technologies, cinematic visuals, and premium UI interactions.
 
 <p>
-  <a href="https://suryaj47.github.io/47fume/"><strong>🌐 Live Demo</strong></a> 
+  <a href="https://47commerce.vercel.app/"><strong>🌐 Live Demo</strong></a> 
 </p>
 
 </div>
