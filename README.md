@@ -13,8 +13,6 @@ An immersive luxury perfume landing page crafted with modern web technologies, c
   <a href="#ai-usage"><strong>AI Usage</strong></a>
 </p>
 
-<img src="assets/screenshots/hero.png" width="100%">
-
 </div>
 
 ---
@@ -63,25 +61,28 @@ Instead of relying on heavy frameworks, the project demonstrates how **HTML, CSS
 
 ## Hero
 
-<img src="assets/screenshots/hero.png">
+<img width="1901" height="863" alt="image" src="https://github.com/user-attachments/assets/3c4d087a-ed05-4210-8cec-fa3e8ac7aab7" />
+
 
 ---
 
 ## Product Section
 
-<img src="assets/screenshots/product.png">
+<img width="1895" height="1067" alt="image" src="https://github.com/user-attachments/assets/00a0ce81-2456-4a60-9041-4a76e5c26ad5" />
+
 
 ---
 
 ## Gallery
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/bb28fa45-78d0-4768-b234-3f3382571be7" />
 
-<img src="assets/screenshots/gallery.png">
 
 ---
 
 ## Mobile View
 
-<img src="assets/screenshots/mobile.png" width="300">
+<img width="446" height="755" alt="image" src="https://github.com/user-attachments/assets/ba2f2ed5-0989-413e-8bf2-f1c79e5f4ec0" />
+
 
 ---
 
@@ -98,12 +99,6 @@ https://www.hexpens.com/
 | Heading | Alice   |
 | Body    | Adamina |
 
-### UI References
-
-- Aceternity UI — 3D Card Effect
-- Aceternity UI — Draggable Cards
-
----
 
 # 🛠 Tech Stack
 
@@ -126,9 +121,7 @@ https://www.hexpens.com/
 │
 ├── assets/
 │   ├── images/
-│   ├── icons/
-│   ├── videos/
-│   └── screenshots/
+│   ├── logo.png
 │
 ├── css/
 │
@@ -203,13 +196,13 @@ Building **47FUME** strengthened my understanding of:
 
 # 👨‍💻 Author
 
-**Surya J**
+**Suryaprakash J**
 
 Computer Science Engineer (Hons.)
 
 Frontend Developer • Full Stack Learner
 
-GitHub: https://github.com/SuryaJ47
+GitHub: https://github.com/Suryaj47
 
 ---
 
