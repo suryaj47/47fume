@@ -7,10 +7,7 @@
 An immersive luxury perfume landing page crafted with modern web technologies, cinematic visuals, and premium UI interactions.
 
 <p>
-  <a href="https://suryaj47.github.io/47fume/"><strong>🌐 Live Demo</strong></a> •
-  <a href="#features"><strong>Features</strong></a> •
-  <a href="#tech-stack"><strong>Tech Stack</strong></a> •
-  <a href="#ai-usage"><strong>AI Usage</strong></a>
+  <a href="https://suryaj47.github.io/47fume/"><strong>🌐 Live Demo</strong></a> 
 </p>
 
 </div>
@@ -27,7 +24,7 @@ Instead of relying on heavy frameworks, the project demonstrates how **HTML, CSS
 
 ---
 
-# ✨ Features
+# ✨ Features  
 
 ✔ Luxury Hero Section
 
