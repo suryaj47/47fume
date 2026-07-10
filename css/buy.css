@@ -175,6 +175,7 @@ BUY MODAL
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   visibility: hidden;
   opacity: 0;
   transition: 0.35s;
@@ -200,7 +201,7 @@ MODAL
 .modal-content {
   position: relative;
 
-  width: min(1200px, 95%);
+  width: min(1120px, 100%);
 
   display: grid;
 
@@ -208,7 +209,7 @@ MODAL
 
   overflow: hidden;
 
-  border-radius: 24px;
+  border-radius: 28px;
 
   background: linear-gradient(135deg, #07101f, #0d1b33, #11284a);
 
@@ -455,6 +456,8 @@ SUCCESS MODAL
 
   align-items: center;
 
+  padding: 20px;
+
   visibility: hidden;
 
   opacity: 0;
@@ -621,13 +624,12 @@ RESPONSIVE
 
 @media (max-width: 600px) {
   .success-box {
-    width: 90%;
-
-    padding: 2rem;
+    width: 100%;
+    padding: 2rem 1.2rem;
   }
 
   .modal-content {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -642,5 +644,124 @@ RESPONSIVE
 
   .buy-card {
     order: 2;
+  }
+}
+
+@media (max-width: 740px) {
+  .buy {
+    padding: 100px 0;
+  }
+
+  .buy .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .buy .section-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .buy-wrapper {
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .buy-image img {
+    width: min(85vw, 360px);
+  }
+
+  .buy-card {
+    padding: 28px;
+  }
+
+  .price {
+    font-size: 2.8rem;
+  }
+
+  .payments {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .modal-content {
+    width: 96%;
+    border-radius: 20px;
+  }
+
+  .modal-details {
+    padding: 1.6rem;
+  }
+
+  .modal-details h2 {
+    font-size: 2rem;
+  }
+
+  .modal-price {
+    font-size: 2.2rem;
+  }
+
+  .success-box {
+    width: min(92%, 430px);
+    padding: 2rem 1.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .buy {
+    padding: 90px 0;
+  }
+
+  .buy .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .buy .section-title p {
+    font-size: 0.95rem;
+  }
+
+  .buy-card {
+    padding: 20px;
+  }
+
+  .buy-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .price {
+    font-size: 2.2rem;
+  }
+
+  .buy-features {
+    gap: 12px;
+  }
+
+  .modal-details {
+    padding: 1.2rem;
+  }
+
+  .modal-tag {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+  }
+
+  .modal-details h2 {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .confirm-btn,
+  #closeSuccess {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  .close-modal {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
   }
 }

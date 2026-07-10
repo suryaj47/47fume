@@ -243,6 +243,32 @@ ul {
   justify-content: space-between;
 
   align-items: center;
+
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 999px;
+  transition: 0.3s ease;
 }
 
 .nav-links {
@@ -283,6 +309,112 @@ ul {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 740px) {
+  .navbar {
+    height: auto;
+    padding: 18px 0;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.55rem;
+  }
+
+  .logo-image {
+    width: 48px;
+    height: 48px;
+    margin-right: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 16px 20px;
+    background: rgba(8, 18, 31, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 0.35s ease;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 0.98rem;
+  }
+
+  .btn-primary {
+    padding: 12px 18px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    padding: 14px 0;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+  }
+
+  .btn-primary {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    padding: 14px 16px;
+    border-radius: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.92rem;
+  }
 }
 
 /*======================================================
