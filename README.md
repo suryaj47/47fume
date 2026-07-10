@@ -200,7 +200,7 @@ Building **47FUME** strengthened my understanding of:
 
 Computer Science Engineer (Hons.)
 
-Frontend Developer • Full Stack Learner
+Full Stack Developer
 
 GitHub: https://github.com/Suryaj47
 
